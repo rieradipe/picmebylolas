@@ -1,0 +1,101 @@
+:root {
+  --color-accent: var(--color-rosa, #ef476f);
+  --color-line: var(--color-line, #e5e7eb);
+  --color-ok: var(--color-verde, #22c55e);
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 16px;
+}
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+.title {
+  margin: 0;
+}
+
+.tools {
+  display: flex;
+  gap: 8px;
+}
+
+.search {
+  min-width: 260px;
+  border: 1px solid var(--color-line);
+  border-radius: 10px;
+  padding: 10px 12px;
+  outline: none;
+}
+.search:focus {
+  border-color: color-mix(in oklab, var(--color-accent) 65%, white);
+  box-shadow: 0 0 0 3px color-mix(in oklab, var(--color-accent) 18%, white);
+}
+
+.tableWrap {
+  background: #fff;
+  border: 1px solid var(--color-line);
+  border-radius: 12px;
+  overflow: hidden;
+}
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+thead tr {
+  background: color-mix(in oklab, var(--color-accent) 6%, white);
+}
+th,
+td {
+  padding: 12px;
+  border-bottom: 1px solid var(--color-line);
+  text-align: left;
+}
+
+.nameCell {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.avatar {
+  width: 36px;
+  height: 36px;
+  display: grid;
+  place-items: center;
+  border-radius: 999px;
+  background: color-mix(in oklab, var(--color-accent) 14%, white);
+  color: #fff;
+  font-weight: 700;
+}
+.idMuted {
+  font-size: 0.75rem;
+  color: #6b7280;
+}
+
+/* Select de rol con la paleta global */
+.roleSelect {
+  border: 1px solid var(--color-line);
+  border-radius: 10px;
+  padding: 10px 12px;
+  background: #fff;
+  outline: none;
+}
+.roleSelect:focus {
+  border-color: color-mix(in oklab, var(--color-accent) 65%, white);
+  box-shadow: 0 0 0 3px color-mix(in oklab, var(--color-accent) 18%, white);
+}
+
+.colRole {
+  width: 180px;
+}
+
+.empty {
+  margin-top: 8px;
+  color: #6b7280;
+}

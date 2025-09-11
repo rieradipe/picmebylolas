@@ -1,0 +1,114 @@
+/* Paleta desde global.css con fallback por si faltara la var */
+:root {
+  /* solo por seguridad; si ya las tienes en global.css, esto no hace nada */
+  --color-accent: var(--color-rosa, #ef476f); /* color principal botones */
+  --color-ok: var(--color-verde, #22c55e); /* entregado/check */
+  --color-line: var(--color-line, #e5e7eb);
+  --color-text: var(--color-text, #111827);
+}
+
+/* contenedor y títulos se quedan igual si ya los tienes */
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 16px;
+}
+.title {
+  margin: 0 0 12px;
+}
+
+/* Tarjeta pedido */
+.card {
+  background: #fff;
+  border: 1px solid var(--color-line);
+  border-radius: 12px;
+  padding: 12px;
+  margin: 12px 0;
+}
+
+.cardHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.idZone {
+  display: flex;
+  gap: 10px;
+  align-items: baseline;
+}
+.orderId {
+  font-weight: 700;
+}
+.zone {
+  color: var(--color-text);
+}
+
+/* Estado */
+.status {
+  font-size: 0.875rem;
+  padding: 4px 10px;
+  border-radius: 999px;
+  border: 1px solid var(--color-line);
+  background: #fff;
+  text-transform: capitalize;
+}
+.sDelivered {
+  background: color-mix(in oklab, var(--color-ok) 14%, white);
+  border-color: color-mix(in oklab, var(--color-ok) 40%, white);
+  color: #065f46;
+}
+
+/* Lista de items */
+.items {
+  margin: 8px 0;
+  padding-left: 18px;
+}
+.qty {
+  color: #6b7280;
+}
+
+/* Botones */
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 6px;
+}
+
+.btn {
+  appearance: none;
+  border: 1px solid color-mix(in oklab, var(--color-accent) 85%, black 0%);
+  background: var(--color-accent);
+  color: #fff;
+  border-radius: 10px;
+  padding: 8px 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.02s ease, filter 0.15s ease;
+}
+.btn:hover {
+  filter: brightness(0.96);
+}
+.btn:active {
+  transform: translateY(1px);
+}
+
+/* “Entregado” */
+.deliveredBadge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 6px;
+  padding: 8px 12px;
+  border-radius: 10px;
+  background: color-mix(in oklab, var(--color-ok) 18%, white);
+  border: 1px solid color-mix(in oklab, var(--color-ok) 45%, white);
+  color: #065f46;
+  font-weight: 700;
+}
+.check {
+  font-size: 1.1rem;
+  line-height: 1;
+}

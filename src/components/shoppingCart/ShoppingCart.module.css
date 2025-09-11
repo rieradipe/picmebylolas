@@ -1,0 +1,67 @@
+.wrap {
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 0;
+  border-bottom: 1px solid var(--color-line);
+}
+
+.priceMuted {
+  color: var(--color-muted);
+}
+
+.qtyWrap {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.total {
+  text-align: right;
+  margin-top: 16px;
+}
+
+.alert {
+  margin-top: 12px;
+  padding: 8px;
+  border-radius: 8px;
+  border: 1px solid;
+}
+
+.alertWarn {
+  color: #9a3412;
+  background: #fffbeb;
+  border-color: #fef3c7;
+}
+
+.alertError {
+  color: #b91c1c;
+  background: #fef2f2;
+  border-color: #fee2e2;
+}
+
+.cta {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 12px;
+}
+
+.payBtn {
+  padding: 10px 16px;
+  border-radius: 10px;
+  border: 1px solid var(--color-line);
+  background: var(--color-verde);
+  color: #fff;
+  cursor: pointer;
+}
+
+.payBtnDisabled {
+  background: #e5e7eb;
+  color: #374151;
+  cursor: not-allowed;
+}
