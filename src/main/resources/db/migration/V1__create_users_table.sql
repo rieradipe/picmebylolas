@@ -1,0 +1,8 @@
+CREATE TABLE users (
+  id BIGSERIAL PRIMARY KEY,
+  nombre VARCHAR(100) NOT NULL,
+  apellidos VARCHAR(100) NOT NULL,
+  email VARCHAR(150) UNIQUE NOT NULL,
+  password_hash VARCHAR(255) NOT NULL,
+  iban_cifrado TEXT
+);
