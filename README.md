@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
@@ -239,4 +238,4 @@ TOKEN=$(echo "$LOGIN_JSON" | sed -n 's/.*"token":"\([^"]*\)".*/\1/p')
 
 **Alba** — Desarrolladora Fullstack (porfolio).  
 _PickMeByLolas_ — 2025
->>>>>>> 2aea979063f7f9b9ec429f7570737186b6b34a15
+
