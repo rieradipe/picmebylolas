@@ -12,3 +12,8 @@ target/
 .idea/
 .env
 .env.*
+target/
+.vscode/
+.idea/
+.env
+.env.*
