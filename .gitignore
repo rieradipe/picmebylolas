@@ -7,3 +7,8 @@ target/
 .env*
 .vscode/
 .idea/
+target/
+.vscode/
+.idea/
+.env
+.env.*
